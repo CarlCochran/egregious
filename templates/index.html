@@ -19,10 +19,21 @@
 </head>
 <body>
 	{% block header %}
+		<div id="header">
+			<span class="one">egregious</span>
+			<span class="two" style="display: none">suoigerge</span>
+		</div>
 	{% endblock %}
 	{% block body %}
-		<p class="one">My Content</p>
-		<p class="two" style="display: none">Hidden Content</p>
+
+		<div id="column_container">
+			<div id="left_half">
+				Left Half
+			</div>
+			<div id="right_half">
+				Right Half
+			</div>
+		</div>
 	{% endblock %}
 	{% block footer %}
 		<div id="footer">
