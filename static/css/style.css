@@ -1,3 +1,25 @@
 body {
 	display: block;
+	font-size: 18px;
+}
+
+p {
+	cursor: pointer;
+}
+
+#footer {
+	position: absolute;
+	bottom:	20px;
+	width: 100%;
+}
+
+#admin_link {
+	position: relative;
+	left: 20px;
+}
+
+#copyright {
+	position:relative;
+	right: 20px;
+	float: right;
 }

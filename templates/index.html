@@ -1,12 +1,32 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="en">
 {% load static from staticfiles %}
+
 <head>
-    <title>Egregious Home Page</title>           
+	{% block loadJS %}
+	<script src="{% static '/static/components/jquery/jquery-2.1.4.min.js' %}"></script>
+	<script src="{% static '/static/js/test.js' %}"></script>
+	{% endblock %}
+	{% block loadCSS %}
 	<link rel="stylesheet" type="text/css" href='{% static "/static/css/style.css" %}' media="screen" />
+	{% endblock %}
+	{% block title %}
+    <title>Egregious Home Page</title>
+    {% endblock %}           
 </head>
 <body>
-<p>My Content</p>    
+	{% block header %}
+	{% endblock %}
+	{% block body %}
+		<p class="one">My Content</p>
+		<p class="two" style="display: none">Hidden Content</p>
+	{% endblock %}
+	{% block footer %}
+		<div id="footer">
+			<span id="admin_link"><a href="/admin">Admin Login</a></span>
+			<span id="copyright">Copyright 2015</span>
+		</div>
+	{% endblock %}
 </body>
-<script src="{% static '/static/components/jquery/jquery-2.1.4.min.js' %}"></script>
+
 </html>
