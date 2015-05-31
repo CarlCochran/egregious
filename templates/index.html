@@ -12,7 +12,10 @@
 	{% endblock %}
 	{% block title %}
     <title>Egregious Home Page</title>
-    {% endblock %}           
+    {% endblock %}
+    {% block favicon %}
+    <link rel="shortcut icon" type="image/png" href="{% static '/static/images/favicon.ico' %}"/>
+    {% endblock %}       
 </head>
 <body>
 	{% block header %}
