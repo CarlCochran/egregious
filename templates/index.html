@@ -1,12 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="en">
+{% load static from staticfiles %}
 <head>
-    <title>My Home Page</title>           
-	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/static/css/style.css" media="screen" />
- 
+    <title>Egregious Home Page</title>           
+	<link rel="stylesheet" type="text/css" href='{% static "/static/css/style.css" %}' media="screen" />
 </head>
 <body>
 <p>My Content</p>    
 </body>
-<script src="{{ STATIC_URL }}/static/js/jquery-2.1.4.min.js"></script>
+<script src="{% static '/static/components/jquery/jquery-2.1.4.min.js' %}"></script>
 </html>
