@@ -1,6 +1,7 @@
 body {
 	display: block;
 	font-size: 18px;
+	margin: 0px;
 }
 
 #header {
@@ -44,6 +45,8 @@ body {
 	width: 49%;
 	text-align: center;
 	border: solid 2px black;
+	transition: width 1s;
+	-webkit-transition: width 1s;
 }
 
 #right_half {
@@ -52,8 +55,21 @@ body {
 	width: 49%;
 	text-align: center;
 	border: solid 2px black;
+	transition: width 1s;
+	-webkit-transition: width 1s;
 }
 
+#left_half.wide_focus, #right_half.wide_focus {
+	width: 85%;
+	transition: width 1s;
+	-webkit-transition: width 1s;
+}
+
+#left_half.narrow_focus, #right_half.narrow_focus {
+	width: 13%;
+	transition: width 1s;
+	-webkit-transition: width 1s;
+}
 
 #footer {
 	position: fixed;
@@ -61,7 +77,7 @@ body {
 	height: 5%;
 	width: 100%;
 	color: #a6a6a6;
-	background-color: rgba(10, 10, 10, 0.8);
+	background-color: rgba(10, 10, 10, 0.6);
 	z-index: 1;
 }
 
