@@ -71,6 +71,11 @@ body {
 	-webkit-transition: width 1s;
 }
 
+#littlered {
+	position: relative;
+	top: 50px;
+}
+
 #footer {
 	position: fixed;
 	bottom:	0px;
